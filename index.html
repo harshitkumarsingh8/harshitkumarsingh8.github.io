@@ -3,93 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshit Kumar Singh | AI/ML Portfolio</title>
+
+    <title>Harshit Kumar Singh | AI/ML Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0f172a, #172554);
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 6px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #38bdf8;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about {
+            text-align: center;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #f8fafc;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        .certificates {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .certificates li {
+            margin: 12px 0;
+            color: #cbd5e1;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #64748b;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Harshit Kumar Singh</h1>
+    <nav>
+        <h2>Harshit.</h2>
 
-    <h2>Aspiring AI/ML Engineer</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <p>
-        BCA Student at Galgotias University with an interest in
-        Artificial Intelligence, Machine Learning and Python.
-    </p>
+    <div class="hero">
+        <div>
+            <h1>Hi, I'm <span>Harshit Kumar Singh</span></h1>
 
-    <hr>
+            <h2>Aspiring AI/ML Engineer</h2>
 
-    <h2>About Me</h2>
+            <p>
+                BCA student at Galgotias University passionate about
+                Artificial Intelligence, Machine Learning, Python and
+                building practical technology solutions.
+            </p>
 
-    <p>
-        I am a BCA student passionate about Artificial Intelligence,
-        Machine Learning and software development. I enjoy building
-        practical projects and continuously improving my technical skills.
-    </p>
+            <div class="buttons">
+                <a class="btn" href="#projects">View Projects</a>
 
-    <h2>Skills</h2>
+                <a class="btn"
+                   href="https://www.linkedin.com/in/harshit-kumar-singh-65358535a/"
+                   target="_blank">
+                    LinkedIn
+                </a>
 
-    <ul>
-        <li>Python</li>
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>Generative AI</li>
-        <li>SQL</li>
-        <li>Git & GitHub</li>
-    </ul>
+                <a class="btn"
+                   href="https://github.com/harshitkumarsingh8"
+                   target="_blank">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <h2>Projects</h2>
+    <section id="about">
+        <h2>About Me</h2>
 
-    <h3>AI Resume Analyzer</h3>
-    <p>
-        AI-powered system for analyzing resumes against job descriptions,
-        matching skills and ranking candidates.
-    </p>
+        <p class="about">
+            I am a BCA student focused on Artificial Intelligence,
+            Machine Learning and software development. I enjoy building
+            practical projects, learning new technologies and improving
+            my problem-solving skills.
+        </p>
+    </section>
 
-    <h3>NOVA AI Assistant</h3>
-    <p>
-        An AI desktop assistant project designed to interact with users
-        through voice and intelligent responses.
-    </p>
+    <section id="skills">
+        <h2>Skills</h2>
 
-    <h3>Movie Genre Classification</h3>
-    <p>
-        Machine Learning project using NLP and TF-IDF for movie genre
-        classification.
-    </p>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Deep Learning</div>
+            <div class="skill">Generative AI</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
 
-    <h3>Student Performance Prediction</h3>
-    <p>
-        Machine Learning project that predicts student performance using
-        academic-related features.
-    </p>
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <h2>Certificates</h2>
+        <div class="projects">
 
-    <ul>
-        <li>Kaggle Python</li>
-        <li>Kaggle Pandas</li>
-        <li>Kaggle Data Visualization</li>
-        <li>Kaggle Intro to Machine Learning</li>
-        <li>Kaggle Intermediate Machine Learning</li>
-        <li>Kaggle Deep Learning</li>
-        <li>IBM SkillsBuild AI/ML Credentials</li>
-        <li>SQL Certificate</li>
-    </ul>
+            <div class="card">
+                <h3>AI Resume Analyzer</h3>
+                <p>
+                    AI-powered system that analyzes resumes against job
+                    descriptions, matches skills and ranks candidates.
+                </p>
+            </div>
 
-    <h2>Connect With Me</h2>
+            <div class="card">
+                <h3>NOVA AI Assistant</h3>
+                <p>
+                    AI desktop assistant designed to interact with users
+                    through voice and intelligent responses.
+                </p>
+            </div>
 
-    <p>
-        <a href="https://github.com/harshitkumarsingh8" target="_blank">
-            GitHub
-        </a>
-    </p>
+            <div class="card">
+                <h3>Movie Genre Classification</h3>
+                <p>
+                    NLP-based Machine Learning project using TF-IDF for
+                    movie genre classification.
+                </p>
+            </div>
 
-    <p>
-        <a href="https://www.linkedin.com/in/harshit-kumar-singh-65358535a/" target="_blank">
-            LinkedIn
-        </a>
-    </p>
+            <div class="card">
+                <h3>Student Performance Prediction</h3>
+                <p>
+                    Machine Learning project that predicts student
+                    performance using academic-related features.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+
+        <ul class="certificates">
+            <li>Kaggle Python</li>
+            <li>Kaggle Pandas</li>
+            <li>Kaggle Data Visualization</li>
+            <li>Kaggle Intro to Machine Learning</li>
+            <li>Kaggle Intermediate Machine Learning</li>
+            <li>Kaggle Deep Learning</li>
+            <li>IBM SkillsBuild AI/ML Credentials</li>
+            <li>SQL Certificate</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With Me</h2>
+
+        <div class="contact">
+            <a href="https://github.com/harshitkumarsingh8" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/harshit-kumar-singh-65358535a/" target="_blank">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Harshit Kumar Singh | AI/ML Portfolio
+    </footer>
 
 </body>
 </html>
